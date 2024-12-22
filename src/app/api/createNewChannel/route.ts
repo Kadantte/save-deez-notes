@@ -5,7 +5,7 @@ import { createRateLimiter } from "@/utils/limiter";
 import { NextRequest, NextResponse } from "next/server";
 
 const rateLimiter = createRateLimiter({
-  maxRequests: 1,
+  maxRequests: 5,
   windowMs: 60 * 10000,
 });
 
